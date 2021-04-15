@@ -7,7 +7,7 @@
 #
 
 
-name: DIY编译OpenWrt固件
+name: DIY_mi_namo编译OpenWrt固件
 
 on:
   workflow_dispatch:
@@ -51,7 +51,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [openwrt]
+        target: [Lede_mi_nano,mi_nano]
 
      # [Lede_nanopi_r2s,Lede_newifi_d2,Lede_phicomm_k2p,Lede_phicomm_n1,Lede_redmi_ac2100,Lede_wr703n_v1,Lede_x86_64,Lede_xiaomi_r3pro,Lede_xiaoyu_c5]
      # [Lienol_phicomm_k2p,Lienol_phicomm_k3,Lienol_x86_64]
